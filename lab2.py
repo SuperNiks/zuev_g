@@ -68,7 +68,7 @@ class TourFrame(wx.Frame):
                 tour_info = get_tour_info(tour_id)
                 if tour_info:
                     wx.MessageBox(f"Название: {tour_info[0]}\nТип: {tour_info[1]}", "Информация о туре",
-                                  wx.OK)  # Замените на нужные поля
+                                  wx.OK)
                 else:
                     wx.MessageBox("Тур не найден.", "Информация о туре", wx.OK)
             except ValueError:
